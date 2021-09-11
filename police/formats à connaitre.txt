@@ -1,0 +1,7 @@
+Voici les différents formats de fichiers de polices qui existent et qu'il faut connaître :
+
+.ttf : TrueType Font. Fonctionne sur IE9 et tous les autres navigateurs.
+.eot : Embedded OpenType. Fonctionne sur Internet Explorer uniquement, toutes versions. Ce format est propriétaire, produit par Microsoft.
+.otf : OpenType Font. Ne fonctionne pas sur Internet Explorer.
+.svg : SVG Font. Le seul format reconnu sur les iPhones et iPads pour le moment.
+.woff : Web Open Font Format. Nouveau format conçu pour le Web, qui fonctionne sur IE9 et tous les autres navigateurs.

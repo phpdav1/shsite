@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+			<link rel="stylesheet" href="dbnt.css" />
+			
+        <title>Unban teamspeak</title>
+
+    </head>
+
+    <body>
+		<header> <!-- Placez ici le contenu de l'en-tête de votre page -->
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">ACCUEIL</a>
+						<a href="unbants.html">UNBANTS</a>
+						<a href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<article id="unbants">
+			<h2 class="unbanp2"> Ce tutoriel en image va vous apprendre à vous débannir de n'importe quelle serveur Teamspeak.</h2> <br />
+			<h2> Chapitre 1 - Changer son adresse IP </h2>
+			
+				<h3> N°1 </h3>
+						<p class="tuto">1. Changer son IP <br/> <br/>
+									Un nombre incalculable de VPN existent sur internet a vous d'en chercher un. </br>
+									Pour ceux ayant une IP dynamique, c'est simple, redemarrez votre livebox. <br/>
+									Cliquez <a href="http://www.mon-ip.com/ip-dynamique.php">ici </a> pour savoir si votre IP est dynamique !<br/>
+									Vous pouvez aussi le faire manuellement depuis votre pc via le pannel d'administration de votre livebox <strong>"192.168.1.1"</strong> pour orange.
+						<p>	
+						
+			<h2> Chapitre 2 - Modifier son PID (Regedit) </h2>
+				<h3> N°2 </h3>
+						<p class="tuto"> 2. Pour la deuxième étape, il va falloir ouvrir <strong>regedit</strong>. <br />
+							Pour cela, rester appuyez sur la touche <strong>"Windows"</strong> de votre clavier, et en même temps appuyer sur la touche "r"<br />
+							Une petite console va s'ouvrir, dans la barre de recherche tapez "<em>regedit</em>", et cliquez sur "OK".
+						</p>
+							<p class="imagetuto"> 
+								<img src="./imagecomp/executerregedit.png"alt="Executer regedit" title= "Regedit"/> 
+							</p>
+
+						
+				<h3> N°3 </h3>
+						<p class="tuto"> 3. Un petit programme que vous n'allez pas forcemment comprendre va ce lancer, pas de panique, c'est normal. <br />
+								Double cliquez sur <strong>"Ordinateur"</strong>, une liste de fichiers devrait apparaître. Comme indiqué sur l'image, cliquez sur <strong>"HKEY_LOCAL_MACHINE"</strong>
+								
+						</p>
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit1.png"alt="HKEY_LOCAL_MACHINE" title= "HKEY_LOCAL_MACHINE"/>
+							</p>
+							
+				<h3> N°4 </h3>
+						<p class="tuto"> 4. Et là, un bon tas de fichier apparaît. <br />
+							Trouvez-y <strong>"SOFTWARE"</strong> et double cliquez dessus.
+						</p>
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit2.png"alt="SOFTWARE" title= "SOFTWARE"/>
+							</p>
+				
+				<h3> N°5 </h3>
+						<p class="tuto"> 5. Là en terme de fichier nous sommes servi. Non vous n'êtes pas perdu au fin fond de votre ordinateur, je vais vous guider !<br />
+								Déscender les fichiers jusqu'a trouver le fichier <strong>"Microsoft"</strong>. <br />
+								Même manip, double cliquez dessus.
+						</p>	
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit3.png"alt="Microsoft" title= "Microsoft"/>
+							</p>
+						
+				<h3> N°6 </h3>
+						<p class="tuto"> 6. Si vous lisez cette étape, j'en déduis que vous suivez. <br/>
+								Maintenant, c'est reparti pour de la recherche. <br/>
+								Chercher désormais le fichier <strong>"Windows NT"</strong>
+						</p>
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit4.png"alt="Windows NT" title= "Windows NT"/>
+							</p>
+				<h3> N°7 </h3>		
+						<p class="tuto">	7. Ensuite, on y est presque, cliquez sur le fichier ce trouvant juste en dessous de Windows NT <strong>"CurrentVersion"</strong>
+							Là, on ce retrouve sur la droite. <br/>
+							On ce retrouve avec pas mal de dossier également. <br/>
+							Celui qui nous interesse, c'est le dossier <strong>"Productld"</strong>. Double cliquer dessus <br/>
+						</p>	
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit5.png"alt="CurrentVersion&Productld" title= "CurrentVersion & Productld"/>
+						</p>
+						
+				<h3> N°8</h3>		
+						<p class="tuto"> 8. Ici, une petite fenêtre apparaît. <br/>
+							Elle contient une série de lettres et de chiffres. <br/>
+							Modifier ce petite code nous permettera de changer notre PID. Une étape cruciale pour être débanni d'un teamspeak. <br/>
+							Pour ce faire, nous allons modifier ces 3 derniers chiffres (pour ma part "00330-80000-00000-AA428"). <br/>
+							Vous pouvez mettre n'importe quelle chiffre, un seul si vous voullez, le but est que le petit code soit modifier. <br/>
+							<strong>Remplacez ces chiffres par des chiffres de votre choix, et cliquez sur ok.</strong><br/>
+							(Vous ne pouvez changer qu'un seul chiffre si vous le souhaiter).
+						</p>	
+							
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit6.png"alt="Valeur" title= "Changer la valeur du nombre"/>
+							</p>
+						
+		<h2><strong> Chapitre 3 - Changer d'identité (Teamspeak) </strong></h2>				
+				<h3> N°9 </h3>		
+						<p class="tuto">Vous découragez pas, on y est bientôt ! <br/>
+								On ce retrouve maintenant sur Teamspeak. <br/>
+								En haut du programme teamspeak, on peut retrouver des bouttons (Connexion, favoris, moi etc..) <br/>
+								<strong> Cliquez sur "Paramètre"</strong> comme indique l'image puis <strong>cliquez sur Identités </strong> <br/>
+						</p>	
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit7.png"alt="identité" title= "Cliquez sur Identités "/>
+							</p>
+						
+						
+				<h3> N°10 </h3>		
+						<p class="tuto">	 Une nouvelle fenêtre apparaît, <strong> cliquez sur "Ajouter" </strong>
+						</p>	
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit8.png"alt="ajouteridentité" title= "Ajouter une identité"/>
+							</p>	
+						
+				<h3> N°11 </h3>		
+						<p class="tuto">	 Configurer votre pseudonyme, choisissez un nom pour votre nouvelle identité.
+							<strong> Cliquez ensuite sur "Amélorier"</strong>
+						</p>
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit9.png"alt="amélioreridentité" title= "Améliorer l'identité"/>
+							</p>
+						</p>	
+						
+				<h3> N°12 </h3>		
+						<p class="tuto">	 Modifiez le <strong>"Niveau de sécurité demandé"</strong> par le nombre <strong>"15"</strong> <br/>
+							Cliquez ensuite sur <strong>"Démarrer"</strong><br/>
+							Un petit chargement apparaît, une fois qu'il est terminé, fermez la fenêtre et <strong>cliquez sur ok.</strong>
+						</p>
+								
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit10.png"alt="niveausecuidentité" title= "Niveau de sécurité de l'identité"/>
+							</p>	
+						
+				<h3> N°13 </h3>		
+						<p>	 Cliquez ensuite sur <strong>Connection</strong> en haut à gauche de teamspeak. <br/>
+							 Ensuite cliquez sur <strong>"se connecter"</strong>
+						</p>
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit11.png"alt="niveausecuidentité" title= "Niveau de sécurité de l'identité"/>
+							</p>
+						
+				<h3> N°14 </h3>		
+						<p class="tuto">	 La fenêtre de connection apparaît, cliquez sur <strong>"Plus"</strong>
+						</p>		
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit12.png"alt="niveausecuidentité" title= "Niveau de sécurité de l'identité"/>
+							</p>
+						
+				<h3> N°14 </h3>		
+						<p class="tuto">	 La fenêtre s'agrandi et affiche plusieurs options. <br />
+							Cliquez sur le bouton de selection <strong>"Identité : "</strong> et séléctionner l'identité que vous avez créer auparavant.<br/>
+						</p>														
+							<p class="imagetuto">
+								<img src="./imagecomp/regedit13.png"alt="niveausecuidentité" title= "Niveau de sécurité de l'identité"/>
+							</p>
+
+					<h4> Enfin,	connectez vous sur le serveur auquel vous-êtes banni, et comme par magie vous êtes débanni. <br/>
+						Cette technique fonctionnera tout le temps si vous suivez bien chaque manipulation. </h4>
+		</article>
+						
+		<footer>
+			<p>Copyright DRK - Tous droits réservés<br />
+				<a href="https://www.facebook.com/DrHumph">Me contacter !</a></p>
+		</footer>
+    </body>
+</html>
